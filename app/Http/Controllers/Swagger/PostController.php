@@ -9,6 +9,7 @@ use App\Http\Controllers\Controller;
  *     path="/api/posts",
  *     summary="Create",
  *     tags={"Post"},
+ *     security={{ "bearerAuth": {} }},
  *
  *     @OA\RequestBody(
  *         @OA\JsonContent(
@@ -39,6 +40,7 @@ use App\Http\Controllers\Controller;
  *     path="/api/posts",
  *     summary="Index",
  *     tags={"Post"},
+ *     security={{ "bearerAuth": {} }},
  *
  *     @OA\Response(
  *         response=200,
@@ -57,6 +59,7 @@ use App\Http\Controllers\Controller;
  *     path="/api/posts/{post}",
  *     summary="Show",
  *     tags={"Post"},
+ *     security={{ "bearerAuth": {} }},
  *
  *     @OA\Parameter(
  *         description="Post's id",
@@ -84,6 +87,7 @@ use App\Http\Controllers\Controller;
  *     path="/api/posts/{post}",
  *     summary="Update",
  *     tags={"Post"},
+ *     security={{ "bearerAuth": {} }},
  *
  *     @OA\Parameter(
  *         description="Post's id",
@@ -122,6 +126,7 @@ use App\Http\Controllers\Controller;
  *     path="/api/posts/{post}",
  *     summary="Delete",
  *     tags={"Post"},
+ *     security={{ "bearerAuth": {} }},
  *
  *     @OA\Parameter(
  *         description="Post's id",
